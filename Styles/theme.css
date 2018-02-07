@@ -1,0 +1,54 @@
+#content, html, body
+{
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+
+#second
+{
+  border-left: 1% solid black;
+  border-right: 1% solid black;
+  margin-right: 3%;
+}
+
+#second
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 30%;
+  height: 100%;
+  -webkit-transform: skew(-20deg);
+  -moz-transform: skew(-20deg);
+  -o-transform: skew(-20deg);
+  background: blue;
+}
+
+#first
+{
+  position: absolute;
+  top: 0%;
+  left: 33%;
+  width: 45%;
+  height: 100%;
+  -webkit-transform: skew(-20deg);
+  -moz-transform: skew(-20deg);
+  -o-transform: skew(-20deg);
+  background: green;
+}
+
+
+#third
+{
+  position: absolute;
+  top: 0;
+  left: 75%;
+  width: 25%;
+  height: 100%;
+  -webkit-transform: skew(-20deg);
+  -moz-transform: skew(-20deg);
+  -o-transform: skew(-20deg);
+  background: pink;
+}
