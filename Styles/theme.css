@@ -1,4 +1,4 @@
-#content, html, body
+#podium, html, body
 {
   margin: 0;
   padding: 0;
@@ -6,49 +6,60 @@
   width: 100%;
 }
 
-#second
+#podium
 {
-  border-left: 1% solid black;
-  border-right: 1% solid black;
-  margin-right: 3%;
+  background-color: #A1A0B0;
+  background: linear-gradient(to bottom right, #A1A0B0, #2C2C50);
+}
+
+#second, #first, #third
+{
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 30%;
+  -webkit-transform: skew(-20deg);
+  -moz-transform: skew(-20deg);
+  -o-transform: skew(-20deg);
 }
 
 #second
 {
-  position: absolute;
-  top: 0;
   left: 0;
-  width: 30%;
-  height: 100%;
-  -webkit-transform: skew(-20deg);
-  -moz-transform: skew(-20deg);
-  -o-transform: skew(-20deg);
-  background: blue;
+
+  border-left: 1px solid white;
 }
 
 #first
 {
-  position: absolute;
-  top: 0%;
-  left: 33%;
-  width: 45%;
-  height: 100%;
-  -webkit-transform: skew(-20deg);
-  -moz-transform: skew(-20deg);
-  -o-transform: skew(-20deg);
-  background: green;
+  left: 30%;
+
+  border-left: 1px solid white;
 }
 
 
 #third
 {
-  position: absolute;
-  top: 0;
-  left: 75%;
-  width: 25%;
-  height: 100%;
-  -webkit-transform: skew(-20deg);
-  -moz-transform: skew(-20deg);
-  -o-transform: skew(-20deg);
-  background: pink;
+  left: 60%;
+
+  border-left: 1px solid white;
+  border-right: 1px solid white;
+}
+
+.character_big
+{
+  position: relative;
+  top: 25vh;
+  max-height: 50vh;
+  -webkit-transform: skew(20deg);
+  -moz-transform: skew(20deg);
+  -o-transform: skew(20deg);
+}
+
+.podium_content
+{
+  -webkit-transform: skew(20deg);
+  -moz-transform: skew(20deg);
+  -o-transform: skew(20deg);
+  color: white; 
 }
