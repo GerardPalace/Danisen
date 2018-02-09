@@ -1,4 +1,6 @@
-#podium, html, body
+* {box-sizing: border-box;}
+
+html, body
 {
   margin: 0;
   padding: 0;
@@ -6,8 +8,57 @@
   width: 100%;
 }
 
-#podium
+#main_menu
 {
+  width: 100%;
+  height: 40px;
+
+  position: absolute;
+  top: 0%;
+  left: 0;
+  background-color: #181818;
+  box-shadow: 0 0 25px 0 #131c25;
+}
+
+#main_menu ul
+{
+  margin: 0;
+  padding: 0;
+
+  margin-left: 15px;
+  margin-right: 15px;
+
+  list-style-type: none;
+}
+
+#main_menu a, #main_menu li
+{
+  display: block;
+  float: left;
+  margin-right: 15px;
+
+  height: 40px;
+  line-height: 40px;
+
+  color: #DDDDDD;
+  text-decoration: none;
+}
+
+#main_menu a:hover
+{
+  color:white;
+}
+
+#ranking
+{
+  margin: 0;
+  padding: 0;
+
+  width: 100%;
+  height: calc(100% - 40px);
+  position: absolute;
+  top: 40px;
+
   background-color: #A1A0B0;
   background: linear-gradient(to bottom right, #A1A0B0, #2C2C50);
 }
@@ -16,50 +67,182 @@
 {
   position: absolute;
   top: 0;
+
+  width: 26%;
   height: 100%;
-  width: 30%;
+
   -webkit-transform: skew(-20deg);
   -moz-transform: skew(-20deg);
   -o-transform: skew(-20deg);
+
+  text-align: center;
+}
+
+#second:hover .character_big, #first:hover .character_big, #third:hover .character_big
+{
+  top: 10vh;
+
+  max-width: 30vw;
+  max-height: 80vh;
+}
+
+
+#second h2, #first h2, #third h2
+{
+  -webkit-transform: skew(20deg);
+  -moz-transform: skew(20deg);
+  -o-transform: skew(20deg);
+
+
+  padding-top: 5px;
+  padding-bottom: 5px;
+  width: 50%;
+  box-shadow: 0 0 25px 0 #131c25;
+  color: white;
+
+  text-align: none;
+  display: inline-block;
+  position: relative;
+  top: calc(-10vh - 40px);
+
 }
 
 #second
 {
   left: 0;
+}
 
-  border-left: 1px solid white;
+#second .character_big
+{
+  top: 20vh;
+}
+
+#second h2
+{
+
+  background-color: silver;
 }
 
 #first
 {
-  left: 30%;
-
-  border-left: 1px solid white;
-}
-
-
-#third
-{
-  left: 60%;
+  left: 26%;
 
   border-left: 1px solid white;
   border-right: 1px solid white;
 }
 
+#first h2
+{
+  background-color: #ffd700;
+}
+
+
+#third
+{
+  left: 52%;
+}
+
+#third .character_big
+{
+  top: calc(25vh - 40px);
+}
+
+#third h2
+{
+  background-color: #CD7F32;
+}
+
 .character_big
 {
   position: relative;
-  top: 25vh;
-  max-height: 50vh;
+  top: 15vh;
+
+  max-width: 26vw;
+  max-height: 70vh;
+
+  transition: max-width 0.1s, max-height 0.1s, top 0.1s;
+  display: inline-block;
+
+  -webkit-filter: drop-shadow(12px 12px 7px rgba(0,0,0,0.5)); filter: drop-shadow(12px 12px 7px rgba(0,0,0,0.5));
   -webkit-transform: skew(20deg);
   -moz-transform: skew(20deg);
   -o-transform: skew(20deg);
 }
 
-.podium_content
+
+#other_rank
 {
-  -webkit-transform: skew(20deg);
-  -moz-transform: skew(20deg);
-  -o-transform: skew(20deg);
-  color: white; 
+  margin: 0;
+  padding: 0;
+
+  position: relative;
+  top: 0;
+  left: 78%;
+
+  width: 22%;
+  height: 100%;
+
+
+  background-color: white;
+
+  box-shadow: 0 0 25px 0 #131c25;
+
+  overflow: auto;
+}
+
+table
+{
+  width: 100%;
+  text-align: center;
+}
+
+tbody
+{
+  overflow: hidden;
+}
+
+table tr, table td, table h3
+{
+  margin: 0;
+  padding: 0;
+  padding-left: 1px;
+
+  height: 32px;
+  font-size: 12px;
+}
+
+td h3
+{
+}
+
+td a
+{
+  display: block;
+  color:inherit;
+
+  text-decoration: none;
+}
+
+
+tr:nth-child(even)
+{
+  background-color: #f2f2f2;
+}
+
+tr:hover, tr:nth-child(even):hover
+{
+  background-color: #2C2C50;
+  color:white;
+}
+
+td h3
+{
+  display: table-cell;
+  vertical-align: middle;
+
+}
+
+td img
+{
+  display: block;
 }
