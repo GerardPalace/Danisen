@@ -270,7 +270,7 @@ body
 
 #c_pres table
 {
-  width: 75%;
+  width: 88%;
   margin: auto;
   text-align: center;
 }
@@ -291,14 +291,14 @@ body
 {
   display: inline-block;
   max-width: 50%;
-  max-height: 30vh;
+  max-height: 45vh;
 
   -webkit-filter: drop-shadow(12px 12px 7px rgba(0,0,0,0.5)); filter: drop-shadow(12px 12px 7px rgba(0,0,0,0.5));
 }
 
 #stats table
 {
-  width: 75%;
+  width: 88%;
   margin: auto;
 
   text-align: center;
@@ -321,7 +321,6 @@ body
   font-weight: normal;
 }
 
-
 #stats td
 {
   width: 50%;
@@ -330,6 +329,11 @@ body
 #stats tr:nth-child(even)
 {
   background-color: #f2f2f2;
+}
+
+#stats tr:nth-child(odd)
+{
+  background-color: white;
 }
 
 #pres
