@@ -8,6 +8,13 @@ html, body
   width: 100%;
 }
 
+body
+{
+  background: linear-gradient(to bottom right, #A1A0B0, #2C2C50);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
 #main_menu
 {
   width: 100%;
@@ -172,7 +179,8 @@ html, body
 
 #other_rank
 {
-  margin: 0;
+  margin: 0; background-repeat: no-repeat;
+    background-attachment: fixed;
   padding: 0;
 
   position: relative;
@@ -190,18 +198,13 @@ html, body
   overflow: auto;
 }
 
-table
+#other_rank table
 {
   width: 100%;
   text-align: center;
 }
 
-tbody
-{
-  overflow: hidden;
-}
-
-table tr, table td, table h3
+#other_rank table tr, #other_rank table td, #other_rank table h3
 {
   margin: 0;
   padding: 0;
@@ -211,11 +214,7 @@ table tr, table td, table h3
   font-size: 12px;
 }
 
-td h3
-{
-}
-
-td a
+#other_rank td a
 {
   display: block;
   color:inherit;
@@ -223,26 +222,119 @@ td a
   text-decoration: none;
 }
 
-
-tr:nth-child(even)
+#other_rank tr:nth-child(even)
 {
   background-color: #f2f2f2;
 }
 
-tr:hover, tr:nth-child(even):hover
+#other_rank tr:hover, #other_rank tr:nth-child(even):hover
 {
   background-color: #2C2C50;
   color:white;
 }
 
-td h3
+#other_rank td h3
 {
   display: table-cell;
   vertical-align: middle;
-
 }
 
-td img
+#other_rank td h4
 {
-  display: block;
+  vertical-align: middle;
+  text-align: center;
+}
+
+#other_rank td img
+{
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+}
+
+#c_pres
+{
+  width: 80%;
+  min-height: calc(100% - 40px);
+
+  margin-left: 10%;
+
+  position: absolute;
+  top: 40px;
+  left: 0;
+
+  background-color: white;
+
+  box-shadow: 0 0 25px 0 #131c25;
+}
+
+#c_pres table
+{
+  width: 75%;
+  margin: auto;
+  text-align: center;
+}
+
+#c_pres td
+{
+    width: 50%;
+}
+
+ #c_pres h1
+ {
+   background-color: #2C2C50;
+   color: white;
+   padding: 5px;
+ }
+
+.img_char
+{
+  display: inline-block;
+  max-width: 50%;
+  max-height: 30vh;
+
+  -webkit-filter: drop-shadow(12px 12px 7px rgba(0,0,0,0.5)); filter: drop-shadow(12px 12px 7px rgba(0,0,0,0.5));
+}
+
+#stats table
+{
+  width: 75%;
+  margin: auto;
+
+  text-align: center;
+}
+
+#stats th
+{
+  color: white;
+  background-color: #2C2C50;
+}
+
+#stats td:first-child
+{
+  font-weight: bold;
+}
+
+
+#stats td:only-child
+{
+  font-weight: normal;
+}
+
+
+#stats td
+{
+  width: 50%;
+}
+
+#stats tr:nth-child(even)
+{
+  background-color: #f2f2f2;
+}
+
+#pres
+{
+  margin-left: 6%;
+  margin-right: 6%;
+  text-align: justify;
 }
