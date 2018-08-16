@@ -1,5 +1,5 @@
 import sys
-from tabulate import tabulate
+#from tabulate import tabulate
 
 class Player:
     def __init__(self, name):
@@ -12,6 +12,8 @@ class Player:
         self.evolution = 0
     def __iter__(self):
         return iter([self.name, self.rank, self.pts, self.victory, self.defeat, self.ratio, self.evolution])
+    def __repr__(self):
+        return self.name + "\t" + str(self.rank) + "\t" + str(self.pts) + "\t" + str(self.victory) + "\t" + str(self.defeat) + "\t" + str(self.ratio) + "%" + "\t" + str(self.evolution) + "\n";
 
 #Return index of player name or -1 if there is no ranked player with that name
 def getPlayerIndex(name, ranking):
@@ -182,4 +184,4 @@ if __name__ == "__main__":
         if i != 0:
             csvs.append(arg)
     ranking = updateRanking("ranking.csv", csvs)
-    print(tabulate(ranking, headers=["Joueur", "Rang", "Points", "Victoires", "Défaites", "% de Victoire", "Evolution depuis la dernière session"]))
+    print(ranking)
