@@ -93,6 +93,20 @@ body
   max-height: 80vh;
 }
 
+#ranking h1
+{
+  width: 50%;
+  box-shadow: 0 0 25px 0 #131c25;
+  color: white;
+
+  text-align: center;
+  padding: 10px;
+  background-color: #181818F0;
+  position: absolute;
+  top: -2%;
+  left: 25%;
+  z-index: 3;
+}
 
 #second h2, #first h2, #third h2
 {
